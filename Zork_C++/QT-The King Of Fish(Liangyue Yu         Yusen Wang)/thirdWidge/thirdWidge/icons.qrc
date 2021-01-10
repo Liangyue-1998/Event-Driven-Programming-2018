@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/imgs">
+        <file>player.png</file>
+        <file>monster.png</file>
+    </qresource>
+</RCC>

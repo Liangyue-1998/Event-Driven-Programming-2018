@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>781</width>
+    <height>688</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>0</y>
+      <width>331</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="btn_left">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>70</y>
+       <width>111</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Left</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_down">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>130</y>
+       <width>121</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Down</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_right">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>70</y>
+       <width>101</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Right</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_up">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>10</y>
+       <width>121</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Up</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="lst_items">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>280</y>
+       <width>291</width>
+       <height>131</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>250</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Things in Room</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_pick">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>420</y>
+       <width>101</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PickUp</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_drop">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>420</y>
+       <width>101</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Drop</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="lst_inventory">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>490</y>
+       <width>291</width>
+       <height>131</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>470</y>
+       <width>161</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Things in Inventory</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_attack">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>200</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Attack</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_teleport">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>200</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Teleport</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="lbl_player">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>19</y>
+      <width>54</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Player:</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="prog_player">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>20</y>
+      <width>201</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_monster">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>54</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Monster:</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="prog_monster">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>40</y>
+      <width>201</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_info">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>570</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Info</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>570</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Quit</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>781</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGame">
+    <property name="title">
+     <string>Game</string>
+    </property>
+    <addaction name="menu_exit"/>
+   </widget>
+   <addaction name="menuGame"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="menu_exit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
